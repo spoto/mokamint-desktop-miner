@@ -1,0 +1,2 @@
+# mokamint-desktop-miner
+
