@@ -1,5 +1,6 @@
-package it.univr.mokamintminer;
+package it.univr.mokamintminer.gui;
 
+import it.univr.mokamintminer.services.MinerService;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;

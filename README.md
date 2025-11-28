@@ -21,6 +21,32 @@ L'obiettivo attuale è mostrare la struttura dell'app desktopcon GUI funzionante
 ## Struttura del progetto
 
 
+>     mokamint-desktop-miner/
+>     pom.xml
+>     README.md                                         # Documentazione
+>     .gitignore                                        
+> 
+>       src/ 
+>       main/
+>         java/
+>           it/univr/mokamintminer/
+>             gui/
+>               Main.java
+>               GUIController.java
+> 
+>             services/
+>               MinerService.java
+> 
+>             core/                                     # Vuoto per ora, logica miner futura
+>             util/                                     # Vuoto per ora, utility future
+> 
+>         resources/
+>           layout/
+>             gui.fxml
+>     
+>       test/                                           # Test futuri
+>         java/ 
+
 ## Come eseguire il progetto
 
 1. Aprire il progetto con Intellij IDEA o Eclipse con supporto Maven.

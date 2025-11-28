@@ -8,7 +8,7 @@
 
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
-      fx:controller="it.univr.mokamintminer.GUIController"
+      fx:controller="it.univr.mokamintminer.gui.GUIController"
       spacing="15" padding="20">
 
     <Label text="Mokamint Desktop Miner"

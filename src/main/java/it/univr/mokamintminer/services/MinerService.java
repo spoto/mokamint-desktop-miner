@@ -1,4 +1,4 @@
-package it.univr.mokamintminer;
+package it.univr.mokamintminer.services;
 
 public class MinerService {
 
