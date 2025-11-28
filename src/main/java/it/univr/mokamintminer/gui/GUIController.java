@@ -17,10 +17,10 @@ public class GUIController {
 
     @FXML
     private void onGenerateKey() {
-        statusLabel.setText("Generazione chiave...");
+        statusLabel.setText("Generate key...");
         // per ora è solo una funzione finta
         minerService.generateKeyPair();
-        statusLabel.setText("Chiave generata");
+        statusLabel.setText("Key generated");
     }
 
     @FXML
@@ -28,13 +28,13 @@ public class GUIController {
         String endpoint = endpointField.getText().trim();
 
         if (endpoint.isEmpty()) {
-            statusLabel.setText("Errore: inserire un endpoint");
+            statusLabel.setText("Error: please enter an endpoint");
             return;
         }
 
-        statusLabel.setText("Creazione miner in corso...");
+        statusLabel.setText("Creating miner...");
         // anche questa ancora da creare
         minerService.createMiner(endpoint);
-        statusLabel.setText("Miner creato");
+        statusLabel.setText("Miner created");
     }
 }

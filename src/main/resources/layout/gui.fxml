@@ -5,23 +5,37 @@
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
 
 <VBox xmlns="http://javafx.com/javafx"
       xmlns:fx="http://javafx.com/fxml"
       fx:controller="it.univr.mokamintminer.gui.GUIController"
-      spacing="15" padding="20">
+      spacing="16"
+      style="-fx-background-color: #FFFFFF;">
+
+    <padding>
+        <Insets top="24" right="24" bottom="24" left="24"/>
+    </padding>
 
     <Label text="Mokamint Desktop Miner"
-           style="-fx-font-size: 22px; -fx-font-weight: bold;" />
+           style="-fx-font-size: 24px; -fx-font-weight: bold; -fx-text-fill: #212121;"
+           alignment="CENTER"/>
 
-    <HBox spacing="10">
-        <Label text="Endpoint:"/>
-        <TextField fx:id="endpointField" promptText="es: http://localhost:8033"/>
+    <HBox spacing="12">
+        <Label text="Endpoint:" style="-fx-font-size: 16px; -fx-text-fill: #212121;"/>
+        <TextField fx:id="endpointField"
+                   promptText="es: http://localhost:8033"
+                   style="-fx-font-size: 16px; -fx-pref-width: 300px;" />
     </HBox>
 
-    <Button text="Crea nuovo miner"
+    <Button text="Create miner"
             fx:id="btnCreateMiner"
-            onAction="#onCreateMiner" />
-    <Label fx:id="statusLabel" text="Stato: in attesa..."
-           style="-fx-font-size: 14px;" />
+            onAction="#onCreateMiner"
+            style="-fx-background-color: #6200EE; -fx-text-fill: white; -fx-font-size: 16px; -fx-font-weight: bold; -fx-background-radius: 8px;"
+            maxWidth="Infinity"/>
+
+    <Label fx:id="statusLabel"
+           text="Status: waiting..."
+           style="-fx-font-size: 14px; -fx-text-fill: #616161;"
+           wrapText="true" />
 </VBox>

@@ -4,11 +4,11 @@ public class MinerService {
 
     public void generateKeyPair() {
         // implementare generazione chiave
-        System.out.println("Generazione chiave");
+        System.out.println("Generating key...");
     }
 
     public void createMiner(String endpoint) {
         // implementare invio richiesta
-        System.out.println("Creazione miner verso endpoint " + endpoint );
+        System.out.println("Creating miner at endpoint: " + endpoint );
     }
 }
