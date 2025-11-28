@@ -9,11 +9,17 @@ L'obiettivo attuale è mostrare la struttura dell'app desktopcon GUI funzionante
 
 ## Funzionalità implementate (al momento)
 
-- GUI JavaFX minimale con: 
-  - Pulsante "Genera nuova chiave" (stub)
-  - Pulsante "Crea nuovo miner" (stub)
-  - Campo per inserire endpoint
-  - Label per lo stato dell'operazione
+- GUI JavaFX minimale con:
+  - Pulsante "Create miner" (stub)
+  - Campo Endpoint per inserire l'URL del nodo Mokamint
+  - Label per lo Status dell'operazione che mostra messaggi come:
+    - "Status: waiting..."
+    - "Generating key..."
+    - "Key generated"
+    - "Creating miner..."
+    - "Miner created"
+    - "Error: please enter an endpoint"
+    
 - Classe 'MinerService' con metodi stub: 
   - 'generateKeyPair()'
   - 'createMiner(String endpoint)'
